@@ -4,6 +4,10 @@
 
 figure;
 
+% linspace(x1,x2,N)
+% Creates a row vector of N elements
+% Evenly spaced between x1 and x2
+
 N = 100;
 t = linspace(0,1,N);
 x= 5+(7*t);
@@ -39,4 +43,5 @@ subplot(4, 2, 4);
 plot(x,y)
 grid on
 title('Refelect accross')
+
 
