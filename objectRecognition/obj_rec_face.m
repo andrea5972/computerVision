@@ -1,16 +1,15 @@
 % Author: Andrea Murphy
-% Date: March 18, 2019
+% Date: March 25, 2019
 % DESC: Object Recognition of 2D image
 
 clear all
 close all
 
-
 pkg load image
 
 figure;                 %figure 1
 
-I = imread('apple.png');
+I = imread('mulligan.jpg');
 subplot(1,2,1);
 imshow(I)
 title('Original Image')
