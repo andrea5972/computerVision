@@ -2,9 +2,6 @@
 % Date: March 25, 2019
 % DESC: Object Recognition of 2D image
 
-clear all
-close all
-
 pkg load image
 
 figure;                 %figure 1
