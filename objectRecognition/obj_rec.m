@@ -54,8 +54,8 @@ title('Original greyscale image with template perfectly overlaying')
 
 % Finds the Correlation between the Template
 c = normxcorr2(gs_I,BW);
-highest_value = max(max(c))
-[x y] = find(c == highest_value)
+highest_value = max(max(c));
+[x, y] = find(c == highest_value);
 
 figure
 plot(x(1),y(1),'*r')
