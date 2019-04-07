@@ -2,8 +2,6 @@
 % Date: March 18, 2019
 % DESC: Object Recognition of 2D image
 
-pkg load image
-
 figure;                 %figure 1
 
 I = imread('apple.png');
@@ -42,13 +40,13 @@ figure;
 % To create a Template
 % and plot the results
 bounds = bwboundaries(BW);
-[l, num] = bwlabel(BW, 8)      % Labels binary 2 dimensional image
+[l, num] = bwlabel(BW, 8);      % Labels binary 2 dimensional image
 subplot(1,1,1);
 imshow(gs_I);
 hold on
 for k = 1:numel (bounds)
 plot (bounds {k} (:, 2), bounds {k} (:, 1), 'r', 'linewidth', 2);
-endfor
+end
 hold off
 title('Original greyscale image with template perfectly overlaying')
 
